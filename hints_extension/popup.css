@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 250px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Light transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* CodeMate Title */
+#title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Hint Container */
+.hint-item {
+    margin-bottom: 10px;
+}
+
+/* Glassmorphic Button */
+.hint-title {
+    background: rgba(255, 255, 255, 0.5); /* Transparent white */
+    color: black;  /* Black text */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-shadow: none;
+}
+
+/* Darker effect on hover */
+.hint-title:hover {
+    background: rgba(0, 0, 0, 0.2); /* Darker on hover */
+    color: black;
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hint Content */
+.hint-content {
+    padding: 10px;
+    border-left: 3px solid #007bff;
+    margin-left: 5px;
+    display: none;
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+    color: #333;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
