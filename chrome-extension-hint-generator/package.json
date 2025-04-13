@@ -1,0 +1,19 @@
+{
+  "name": "chrome-extension-hint-generator",
+  "version": "1.0.0",
+  "description": "This project is a simple Chrome extension that generates hints one at a time when a button is clicked in the popup interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@huggingface/inference": "^3.7.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "puppeteer": "^24.6.0"
+  }
+}
