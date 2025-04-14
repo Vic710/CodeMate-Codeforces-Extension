@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CF Hint Helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="../images/icon48.png" alt="Logo">
+        <h1>CodeForces Hint Helper</h1>
+      </div>
+    </header>
+
+    <div id="status-message" class="info-message">
+      <p>Click the button below to get hints for the current Codeforces problem.</p>
+    </div>
+
+    <div class="actions">
+      <button id="get-hints-btn" class="primary-button">Get Hints</button>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Processing problem and generating hints...</p>
+    </div>
+
+    <div id="hints-container" class="hidden">
+      <h2>Problem Hints</h2>
+      <div class="hint-box">
+        <button id="hint1-btn" class="hint-button">Show Hint 1</button>
+        <div id="hint1-content" class="hint-content hidden"></div>
+      </div>
+      
+      <div class="hint-box hidden" id="hint2-box">
+        <button id="hint2-btn" class="hint-button">Show Hint 2</button>
+        <div id="hint2-content" class="hint-content hidden"></div>
+      </div>
+      
+      <div class="hint-box hidden" id="hint3-box">
+        <button id="hint3-btn" class="hint-button">Show Hint 3</button>
+        <div id="hint3-content" class="hint-content hidden"></div>
+      </div>
+    </div>
+
+    <div id="error-container" class="error-message hidden">
+      <p>An error occurred. Please make sure:</p>
+      <ul>
+        <li>You're on a Codeforces problem page</li>
+        <li>The Flask server is running at localhost:5000</li>
+        <li>The problem has a tutorial available</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>© 2025 CF Hint Helper</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
