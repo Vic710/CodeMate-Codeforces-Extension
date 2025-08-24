@@ -1,0 +1,7 @@
+{
+  "hints": [
+    "Consider the effect of repeatedly removing the minimum element and adding smaller elements.",
+    "Focus on how many operations can be applied for a particular minimum value before it changes.",
+    "Explore how the value of min(S) affects the number of operations you can perform. Can you bound the number of significant minimum values?"
+  ]
+}

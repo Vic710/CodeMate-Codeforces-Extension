@@ -1,0 +1,7 @@
+{
+  "hints": [
+    "Focus on the constraints imposed by the XOR operation.",
+    "Examine how the last element of the array interacts with the transformations.",
+    "Work backwards from the end of the arrays.  What condition *must* be true for each element to be transformed correctly?"
+  ]
+}
