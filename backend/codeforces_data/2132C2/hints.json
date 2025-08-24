@@ -1,0 +1,7 @@
+{
+  "hints": [
+    "Consider the representation of n in base 3. How does this relate to the number of deals?",
+    "Think about converting a smaller deal (3^x) into a larger deal (3^(x+1)). How does this impact the cost and the number of deals?",
+    "After minimizing deals, greedily convert higher powers of 3 deals into lower ones to minimize the cost, while staying within the k deals limit."
+  ]
+}
