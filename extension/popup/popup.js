@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   
     function checkServerStatus() {
-      fetch('http://localhost:5000/status')
+      fetch('http://localhost:5001/status')
         .then(response => {
           if (!response.ok) throw new Error('Server is not responding');
           return response.json();
@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <code>cd backend && python app.py</code>
           `;
           getHintsBtn.disabled = true;
+          console.log(error)
         });
     }
     
@@ -116,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         attempts++;
         
-        fetch(`http://localhost:5000/check-hints?problemCode=${problemCode}`)
+        fetch(`http://localhost:5001/check-hints?problemCode=${problemCode}`)
           .then(response => {
             if (!response.ok) throw new Error('Server error');
             return response.json();
@@ -140,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function getAndDisplayHints(problemCode) {
-      fetch(`http://localhost:5000/get-hints?problemCode=${problemCode}`)
+      fetch(`http://localhost:5001/get-hints?problemCode=${problemCode}`)
         .then(response => {
           if (!response.ok) throw new Error('Failed to retrieve hints');
           return response.json();

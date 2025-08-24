@@ -173,7 +173,7 @@ async function processCodeforcesProblem(tabId) {
 
 // Function to send data to the Flask server
 function sendToServer(data) {
-  const serverUrl = 'http://localhost:5000/save-data'; // Flask server URL
+  const serverUrl = 'http://localhost:5001/save-data'; // Flask server URL
   
   return fetch(serverUrl, {
     method: 'POST',
