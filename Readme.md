@@ -79,7 +79,3 @@ codeforces-hint-helper/
 ├── README.md
 └── .env
 ```
-
-## License
-
-MIT
